@@ -27,32 +27,6 @@
 				'name': 'keyword.control.cpu12'
 	}
 	{
-		'comment': 'Numeric Constants'
-		'match': '(?i-)(\\s+|,\\s*)(#)?((%)([01]{8}|[01]{16})|(\\$)([0-9A-F]{2}|[0-9A-F]{4})|([0-9]{1,5}))\\b(?-i)'
-		'captures':
-			'2':
-				'name': 'keyword.operator.cpu12'
-			'4':
-				'name': 'keyword.operator.cpu12'
-			'5':
-				'name': 'constant.numeric.cpu12'
-			'6':
-				'name': 'keyword.operator.cpu12'
-			'7':
-				'name': 'constant.numeric.cpu12'
-			'8':
-				'name': 'constant.numeric.cpu12'
-	}
-	{
-		'comment': 'Label Use'
-		'match': '(?i-)(\\s+|,\\s*)(#)?([_a-zA-Z][-\\w]+)\\b(?-i)'
-		'captures':
-			'2':
-				'name': 'keyword.operator.cpu12'
-			'3':
-				'name': 'variable.other.cpu12'
-	}
-	{
 		'comment': 'Load & Store Instructions'
 		'match': '(?i-)\\s+(L(D(A[AB]|[DSXY])|EA[SXY])|ST(A[AB]|[DSXY]))\\b(?-i)'
 		'captures':
@@ -233,5 +207,45 @@
 		'captures':
 			'1':
 				'name': 'support.instruction.cpu12'
+	}
+	{
+		'comment': 'Asterisk as Current Address'
+		'match': '(?i-)(\\s+|,\\s*)(\\*)\\b(?-i)'
+		'captures':
+			'2':
+				'name': 'variable.language.cpu12'
+	}
+	{
+		'comment': 'Registers'
+		'match': '(?i-)(\\s+|,\\s*)(A|B|CCR|D|X|Y|PC|SP)\\b(?-i)'
+		'captures':
+			'2':
+				'name': 'variable.language.cpu12'
+	}
+	{
+		'comment': 'Numeric Constants'
+		'match': '(?i-)(\\s+|,\\s*)(#)?((%)([01]{8}|[01]{16})|(\\$)([0-9A-F]{2}|[0-9A-F]{4})|([0-9]{1,5}))\\b(?-i)'
+		'captures':
+			'2':
+				'name': 'keyword.operator.cpu12'
+			'4':
+				'name': 'keyword.operator.cpu12'
+			'5':
+				'name': 'constant.numeric.cpu12'
+			'6':
+				'name': 'keyword.operator.cpu12'
+			'7':
+				'name': 'constant.numeric.cpu12'
+			'8':
+				'name': 'constant.numeric.cpu12'
+	}
+	{
+		'comment': 'Label Use'
+		'match': '(?i-)(\\s+|,\\s*)(#)?([_a-zA-Z][-\\w]+)\\b(?-i)'
+		'captures':
+			'2':
+				'name': 'keyword.operator.cpu12'
+			'3':
+				'name': 'variable.other.cpu12'
 	}
 ]
