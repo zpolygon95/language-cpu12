@@ -1,19 +1,19 @@
 {
-	"name": "language-cpu12",
-	"main": "./lib/language-cpu12",
-	"version": "0.0.0",
-	"description": "Grammar and support for the CPU12 Assembly Language",
-	"keywords": [
-		"assembler",
-		"assembly",
-		"cpu12",
-		"hc12",
-		"s12"
-	],
-	"repository": "https://github.com/zpolygon95/language-cpu12",
-	"license": "MIT",
-	"engines": {
-		"atom": "*"
-	},
-	"dependencies": {}
+  "name": "language-cpu12",
+  "main": "./lib/language-cpu12",
+  "version": "0.1.0",
+  "description": "Grammar and support for the CPU12 Assembly Language",
+  "keywords": [
+    "assembler",
+    "assembly",
+    "cpu12",
+    "hc12",
+    "s12"
+  ],
+  "repository": "https://github.com/zpolygon95/language-cpu12",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {}
 }
