@@ -1,9 +1,11 @@
 ## 0.1.0 - First Release ##
 
-## 0.1.1 - Documentation Updates ##
-
 ### Done ###
-+	Added Register Definitions
++	Added comments
++	Added all instructions
++	Added binary, hexadecimal, and decimal constants
++	Added label definitions and usage
++	Added register definitions
 +	Took screenshot using `envy-theme` and `spacegray-eighties-ui`
 
 ### To-Do ###
