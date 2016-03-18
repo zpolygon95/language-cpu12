@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle language-cpu12'
+      'command': 'language-cpu12:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'language-cpu12'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'language-cpu12:toggle'
+        }
+      ]
+    ]
+  }
+]
