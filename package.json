@@ -1,7 +1,7 @@
 {
 	"name": "language-cpu12",
 	"main": "./lib/language-cpu12",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"description": "Grammar and support for the CPU12 Assembly Language",
 	"keywords": [
 		"assembler",
