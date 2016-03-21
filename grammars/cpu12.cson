@@ -11,6 +11,11 @@
 		'name': 'comment.line.cpu12'
 	}
 	{
+		'comment': 'String Constants'
+		'match': '\\".+\\"'
+		'name': 'string.quoted.double.cpu12'
+	}
+	{
 		'comment': 'Label Definitions -- with & without colons'
 		'match': '^([_a-zA-Z][-\\w]+)(:)?'
 		'captures':
@@ -210,7 +215,7 @@
 	}
 	{
 		'comment': 'Asterisk as Current Address'
-		'match': '(?i-)(\\s+|,\\s*)(\\*)\\b(?-i)'
+		'match': '(?i-)(\\s+|,\\s*)(\\*)(?-i)'
 		'captures':
 			'2':
 				'name': 'variable.language.cpu12'

@@ -9,6 +9,15 @@
 +	Took screenshot using `envy-theme` and `spacegray-eighties-ui`
 
 ### To-Do ###
-*	Fix `Asterisk as Current Address regex`
+*	Fix `Asterisk as Current Address` regex
 *	Add string highlighting for the `FCC` directive
+*	Implement a listing grammar
+
+## 0.2.0 - Bugfixes ##
+
+### Done ###
++	Added string highlighting
++	Fixed `Asterisk as Current Address` regex
+
+### To-Do ###
 *	Implement a listing grammar
