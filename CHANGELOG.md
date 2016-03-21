@@ -21,3 +21,17 @@
 
 ### To-Do ###
 *	Implement a listing grammar
+
+## 1.0.0 - Listing Grammar Implementation ##
+
+### Done ###
++	Created the `lst-cpu12.cson` file
++	Duplicated the contents of the original grammar definition
++	Defined the `Listing Results` highlighting
+
+### To-Do ###
++	Modify the `Label Definitions` highlighting to accommodate the Listing
+	Results
++	Modify the Instruction highlighting to accommodate the Listing Results
++	Modify the Directive highlighting to accommodate the Listing Results
++	Verify the Argument highlighting accommodates the Listing Results
