@@ -1,3 +1,18 @@
+# Changelog #
+
+## 1.3.0 - Closing Issues ##
+
+### Done ###
++	Highlighted the assembler information at the top of the file (issue #2)
++	Created the `#include` directive + path highlighting (issue #4). Path
+	highlighting is rather restrictive, and may need to be modified.
+
+
+### To-Do ###
++	Properly highlight the assembly time calculations (issue #1)
+
+---
+
 ## 1.2.0 - More Listing Improvements ##
 
 ### Done ###

@@ -15,6 +15,20 @@
 		'name': 'comment.line.lst-cpu12'
 	}
 	{
+		'comment': 'Assembly info dump'
+		'match': '^(as12|Executed).*$'
+		'name': 'comment.line.lst-cpu12'
+	}
+	{
+		'comment': '#include directive and path'
+		'match': '(?i-)\\s+(#include)\\s+([-_.a-zA-Z0-9/~]+)(?-i)'
+		'captures':
+			'1':
+				'name': 'keyword.control.lst-cpu12'
+			'2':
+				'name': 'string.unquoted.path.lst-cpu12'
+	}
+	{
 		'comment': 'Directives'
 		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(ORG|EQU|REDEF|DS|DW|FCC|END|#ifdef|#ifndef|#ifeq|#else|#endif)\\b(?-i)'
 		'captures':
