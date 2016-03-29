@@ -1,3 +1,16 @@
+## 1.2.0 - More Listing Improvements ##
+
+### Done ###
++	Modified the Instruction highlighting
++	Modified the Directive highlighting
+
+### To-Do ###
++	Create the `#include` directive + path highlighting (issue #4)
++	Properly highlight the assembly time calculations (issue #1)
++	Highlight the assembler information at the top of the file (issue #2)
+
+---
+
 ## 1.1.0 - Listing Grammar fixes ##
 
 ### Done ###

@@ -15,6 +15,249 @@
 		'name': 'comment.line.lst-cpu12'
 	}
 	{
+		'comment': 'Directives'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(ORG|EQU|REDEF|DS|DW|FCC|END|#ifdef|#ifndef|#ifeq|#else|#endif)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'keyword.control.lst-cpu12'
+	}
+	{
+		'comment': 'Load & Store Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(L(D(A[AB]|[DSXY])|EA[SXY])|ST(A[AB]|[DSXY]))\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Transfer & Exchange Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(T(A[BP]|[BP]A|FR|S[XY]|[XY]S)|XGD[XY]|EXG|SEX)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Move Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(MOV[BW])\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Addition & Subtraction Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(A(B[AXY]|D(C[AB]|D[ABD]))|S(B(A|C[AB])|UB[ABD]))\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Binary Coded Decimal Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(DAA)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Decrement & Increment Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(DE(C[AB]?|[SXY])|IN(C[AB]?|[SXY]))\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Compare & Test Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(C(BA|MP[AB]|P[DSXY])|TST[AB]?)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Boolean Logic Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(AND([AB]|CC)|EOR[AB]|OR(A[AB]|CC))\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Clear, Complement, & Negate Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(C(L(R[AB]?|[CIV])|OM[AB]?)|NEG[AB]?)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Multiplication & Division Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(E?MULS?|[EI]DIVS?|FDIV)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Bit Test and Manipulation Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(B(CLR|IT[AB]|SET))\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Shift & Rotate Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+([LA]S[LR][AB]?|LS[LR]D|ASLD|RO[LR][AB]?)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Fuzzy Logic Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(MEM|REVW?|WAVR?)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Minimum & Maximum Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(M(IN|AX)[AM]|EM(IN|AX)[DM])\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Multiply & Accumulate Instruction'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(EMACS)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Table Interpolation Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(E?TBL)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Long & Short Branch Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(L?B(R[AN]|[CV][CS]|EQ|MI|NE|PL|L[EOST]|H[IS]|G[ET]))\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Bit Condition Branch Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(BR(CLR|SET))\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Loop Primitive Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+([DIT]B(EQ|NE))\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Jump & Subroutine Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(BSR|CALL|J(MP|SR)|RT[CS])\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Interrupt Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+((RT|SW)I|TRAP)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Index Manipulation Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+((AB|XGD)[XY]|(CP|LD|LEA|ST)[SXY]|T(FR|S[XY]|[XY]S)|EXG|XGD[XY])\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Stacking Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+((CP|DE|IN|LD|LEA|ST|TX|TY|)S|TS[XY]|(PUL|PSH)[ABCDXY])\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Condition Code Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(SE[CIV])\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Stop & Wait Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(STOP|WAI)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
+		'comment': 'Background Mode and Null Instructions'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(BGND|L?BRN|NOP)\\b(?-i)'
+		'captures':
+			'1':
+				'name': 'comment.line.lst-cpu12'
+			'3':
+				'name': 'support.instruction.lst-cpu12'
+	}
+	{
 		'comment': 'Label Definitions -- with & without colons'
 		'match': '^([0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+([_a-zA-Z][-\\w]+)(:)?'
 		'captures':
@@ -24,200 +267,6 @@
 				'name': 'entity.name.function.cpu12'
 			'4':
 				'name': 'keyword.operator.lst-cpu12'
-	}
-	{
-		'comment': 'String Constants'
-		'match': '\\".+\\"'
-		'name': 'string.quoted.double.lst-cpu12'
-	}
-	{
-		'comment': 'Directives'
-		'match': '(?i-)\\s+(ORG|EQU|REDEF|DS|DW|FCC|END|#ifdef|#ifndef|#ifeq|#else|#endif)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'keyword.control.lst-cpu12'
-	}
-	{
-		'comment': 'Load & Store Instructions'
-		'match': '(?i-)\\s+(L(D(A[AB]|[DSXY])|EA[SXY])|ST(A[AB]|[DSXY]))\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Transfer & Exchange Instructions'
-		'match': '(?i-)\\s+(T(A[BP]|[BP]A|FR|S[XY]|[XY]S)|XGD[XY]|EXG|SEX)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Move Instructions'
-		'match': '(?i-)\\s+(MOV[BW])\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Addition & Subtraction Instructions'
-		'match': '(?i-)\\s+(A(B[AXY]|D(C[AB]|D[ABD]))|S(B(A|C[AB])|UB[ABD]))\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Binary Coded Decimal Instructions'
-		'match': '(?i-)\\s+(DAA)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Decrement & Increment Instructions'
-		'match': '(?i-)\\s+(DE(C[AB]?|[SXY])|IN(C[AB]?|[SXY]))\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Compare & Test Instructions'
-		'match': '(?i-)\\s+(C(BA|MP[AB]|P[DSXY])|TST[AB]?)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Boolean Logic Instructions'
-		'match': '(?i-)\\s+(AND([AB]|CC)|EOR[AB]|OR(A[AB]|CC))\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Clear, Complement, & Negate Instructions'
-		'match': '(?i-)\\s+(C(L(R[AB]?|[CIV])|OM[AB]?)|NEG[AB]?)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Multiplication & Division Instructions'
-		'match': '(?i-)\\s+(E?MULS?|[EI]DIVS?|FDIV)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Bit Test and Manipulation Instructions'
-		'match': '(?i-)\\s+(B(CLR|IT[AB]|SET))\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Shift & Rotate Instructions'
-		'match': '(?i-)\\s+([LA]S[LR][AB]?|LS[LR]D|ASLD|RO[LR][AB]?)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Fuzzy Logic Instructions'
-		'match': '(?i-)\\s+(MEM|REVW?|WAVR?)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Minimum & Maximum Instructions'
-		'match': '(?i-)\\s+(M(IN|AX)[AM]|EM(IN|AX)[DM])\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Multiply & Accumulate Instruction'
-		'match': '(?i-)\\s+(EMACS)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Table Interpolation Instructions'
-		'match': '(?i-)\\s+(E?TBL)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Long & Short Branch Instructions'
-		'match': '(?i-)\\s+(L?B(R[AN]|[CV][CS]|EQ|MI|NE|PL|L[EOST]|H[IS]|G[ET]))\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Bit Condition Branch Instructions'
-		'match': '(?i-)\\s+(BR(CLR|SET))\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Loop Primitive Instructions'
-		'match': '(?i-)\\s+([DIT]B(EQ|NE))\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Jump & Subroutine Instructions'
-		'match': '(?i-)\\s+(BSR|CALL|J(MP|SR)|RT[CS])\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Interrupt Instructions'
-		'match': '(?i-)\\s+((RT|SW)I|TRAP)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Index Manipulation Instructions'
-		'match': '(?i-)\\s+((AB|XGD)[XY]|(CP|LD|LEA|ST)[SXY]|T(FR|S[XY]|[XY]S)|EXG|XGD[XY])\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Stacking Instructions'
-		'match': '(?i-)\\s+((CP|DE|IN|LD|LEA|ST|TX|TY|)S|TS[XY]|(PUL|PSH)[ABCDXY])\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Condition Code Instructions'
-		'match': '(?i-)\\s+(SE[CIV])\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Stop & Wait Instructions'
-		'match': '(?i-)\\s+(STOP|WAI)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
-	}
-	{
-		'comment': 'Background Mode and Null Instructions'
-		'match': '(?i-)\\s+(BGND|L?BRN|NOP)\\b(?-i)'
-		'captures':
-			'1':
-				'name': 'support.instruction.lst-cpu12'
 	}
 	{
 		'comment': 'Asterisk as Current Address'
@@ -258,5 +307,10 @@
 				'name': 'keyword.operator.lst-cpu12'
 			'3':
 				'name': 'variable.other.lst-cpu12'
+	}
+	{
+		'comment': 'String Constants'
+		'match': '\\".+\\"'
+		'name': 'string.quoted.double.lst-cpu12'
 	}
 ]
