@@ -1,5 +1,20 @@
 # Changelog #
 
+## 1.4.0 -  ##
+
+### Done ###
++	Fixed labels being mistaken for listing output when they begin with
+	`[0-9A-Fa-f]`
+	[issue #6](https://github.com/zpolygon95/language-cpu12/issues/6)
++	Added #include directive detection to the cpu12 grammar
+	[issue #4](https://github.com/zpolygon95/language-cpu12/issues/4)
+
+### To-Do ###
++	Implement constant expressions
+	[issue #1](https://github.com/zpolygon95/language-cpu12/issues/1)
+
+---
+
 ## 1.3.0 - Closing Issues ##
 
 ### Done ###
