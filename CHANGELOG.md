@@ -1,6 +1,6 @@
 # Changelog #
 
-## 1.4.0 -  ##
+## 1.4.0 - Comment Toggling and #include for Source Documents ##
 
 ### Done ###
 +	Fixed labels being mistaken for listing output when they begin with
@@ -8,6 +8,10 @@
 	[issue #6](https://github.com/zpolygon95/language-cpu12/issues/6)
 +	Added #include directive detection to the cpu12 grammar
 	[issue #4](https://github.com/zpolygon95/language-cpu12/issues/4)
++	Added commentStart setting for the `.source.cpu12` scope. This setting
+	doesn't really make sense for the `.source.lst-cpu12` scope, as it isn't a
+	source file users will be modifying.
+	[issue #7](https://github.com/zpolygon95/language-cpu12/issues/7)
 
 ### To-Do ###
 +	Implement constant expressions
