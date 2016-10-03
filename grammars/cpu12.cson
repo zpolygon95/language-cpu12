@@ -16,6 +16,11 @@
 		'name': 'string.quoted.double.cpu12'
 	}
 	{
+		'comment': 'String Constants'
+		'match': '\\\'.+\\\''
+		'name': 'string.quoted.single.cpu12'
+	}
+	{
 		'comment': 'Label Definitions -- with & without colons'
 		'match': '^([_a-zA-Z][-\\w]+)(:)?'
 		'captures':
@@ -35,7 +40,7 @@
 	}
 	{
 		'comment': 'Directives'
-		'match': '(?i-)\\s+(ORG|EQU|REDEF|DS|DW|FCC|END|#ifdef|#ifndef|#ifeq|#else|#endif)\\b(?-i)'
+		'match': '(?i-)\\s+(ORG|EQU|REDEF|DS|DW|DB|FCC|END|#ifdef|#ifndef|#ifeq|#else|#endif)\\b(?-i)'
 		'captures':
 			'1':
 				'name': 'keyword.control.cpu12'

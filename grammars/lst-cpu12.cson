@@ -30,7 +30,7 @@
 	}
 	{
 		'comment': 'Directives'
-		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(ORG|EQU|REDEF|DS|DW|FCC|END|#ifdef|#ifndef|#ifeq|#else|#endif)\\b(?-i)'
+		'match': '(?i-)(^[0-9A-Fa-f]{4}(\\s+[0-9A-Fa-f]{2}){0,6})?\\s+(ORG|EQU|REDEF|DS|DW|DB|FCC|END|#ifdef|#ifndef|#ifeq|#else|#endif)\\b(?-i)'
 		'captures':
 			'1':
 				'name': 'comment.line.lst-cpu12'
@@ -326,5 +326,10 @@
 		'comment': 'String Constants'
 		'match': '\\".+\\"'
 		'name': 'string.quoted.double.lst-cpu12'
+	}
+	{
+		'comment': 'String Constants'
+		'match': '\\\'.+\\\''
+		'name': 'string.quoted.single.lst-cpu12'
 	}
 ]
