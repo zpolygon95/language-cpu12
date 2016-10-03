@@ -1,5 +1,18 @@
 # Changelog #
 
+## 1.4.1 - Small Bugfixes ##
+
+### Done ###
++	Added single-quoted strings
++	Added the DB directive
++	Added a section in the README about ctags
+
+### To-Do ###
++	Implement constant expressions
+	[issue #1](https://github.com/zpolygon95/language-cpu12/issues/1)
+
+---
+
 ## 1.4.0 - Comment Toggling and #include for Source Documents ##
 
 ### Done ###
