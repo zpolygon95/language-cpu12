@@ -1,5 +1,15 @@
 # Changelog #
 
+## 1.5.0 - Automatic Indentation ##
+### Done ###
++   Added (in|de)creaseIndentPattern rules in settings/language-cpu12.cson
+
+### To-Do ###
++	Implement constant expressions
+	[issue #1](https://github.com/zpolygon95/language-cpu12/issues/1)
+
+---
+
 ## 1.4.1 - Small Bugfixes ##
 
 ### Done ###

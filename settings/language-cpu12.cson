@@ -1,3 +1,5 @@
 '.source.cpu12':
 	'editor':
 		'commentStart': '; '
+		'increaseIndentPattern': '^([_a-zA-Z][-\\w]+):'
+		'decreaseIndentPattern': '^\\s*([_a-zA-Z][-\\w]+):'
